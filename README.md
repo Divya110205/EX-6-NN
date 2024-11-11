@@ -48,6 +48,16 @@ plt.title("MLP Training Loss Convergence")
 plt.xlabel("Iteration")
 plt.ylabel("Training Loss")
 plt.show()
+
+accuracy = accuracy_score(y_test, y_pred)
+conf_matrix = confusion_matrix(y_test, y_pred)
+classification_rep = classification_report(y_test, y_pred)
+# Print the results
+print(f"Accuracy: {accuracy}")
+print("\nConfusion Matrix:")
+print(conf_matrix)
+print("\nClassification Report:")
+print(classification_rep)
 ```
 
 <H3>Output:</H3>
